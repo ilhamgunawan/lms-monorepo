@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "name": "Dashboard",
+    "parent_id": null,
+    "path": "/",
+    "roles": ["admin", "teacher"]
+  },
+  {
+    "id": "2",
+    "name": "User Management",
+    "parent_id": null,
+    "path": "/user",
+    "roles": ["admin", "teacher"]
+  },
+  {
+    "id": "3",
+    "name": "Course Management",
+    "parent_id": null,
+    "path": "/course",
+    "roles": ["admin", "teacher"]
+  },
+  {
+    "id": "4",
+    "name": "Access Management",
+    "parent_id": null,
+    "path": "/access",
+    "roles": ["admin"]
+  }
+]

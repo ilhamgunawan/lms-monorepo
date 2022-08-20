@@ -3,6 +3,8 @@
   "version": 2,
   "projects": {
     "cms": "apps/cms",
-    "cms-e2e": "apps/cms-e2e"
+    "cms-e2e": "apps/cms-e2e",
+    "types": "libs/types",
+    "util": "libs/util"
   }
 }
