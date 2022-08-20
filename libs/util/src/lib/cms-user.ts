@@ -43,3 +43,11 @@ export function deleteUser(userId: string) {
     withCredentials: true,
   });
 }
+
+export function fetchUserById(userId: string) {
+  return axios({
+    url: `http://localhost:7002/api/v1/users/${userId}`,
+    method: 'get',
+    withCredentials: true,
+  });
+}

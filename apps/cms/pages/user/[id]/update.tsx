@@ -5,6 +5,7 @@ import { getConfig, Config } from '../../../src/utils/utils';
 import Layout from '../../../src/layout/Layout';
 import RouteProtection from '../../../src/route-protection/RouteProtection';
 import AuthProtection from '../../../src/auth-protection/AuthProtection';
+import UpdateUserScreen from '../../../src/user-management/UpdateUserScreen';
 
 interface PageProps {
   config: Config;
@@ -25,7 +26,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
 export default function Page(props: PageProps) {
   const id = props.id;
-  console.log({id});
+
   return (
     <AuthProtection>
       <NextHead>
@@ -42,7 +43,7 @@ export default function Page(props: PageProps) {
           }
         ]}>
         <RouteProtection allowedRoles={['admin', 'teacher']}>
-          <h1>{'Update user'}</h1>
+          <UpdateUserScreen userId={id} />
         </RouteProtection>
       </Layout>
     </AuthProtection>
